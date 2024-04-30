@@ -10,8 +10,17 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    color: red;
+}
+
 button {
     padding: 1rem;
+}
+
+select {
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .d-none {
@@ -46,4 +55,13 @@ button {
 
 .grid-difficile {
     width: 700px;
+}
+
+.contenitore {
+    text-align: center;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
