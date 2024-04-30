@@ -3,14 +3,11 @@ let grid = document.getElementById('griglia')
 //Creo ciclo for per creare i quadrati
 for (let i = 1; i <= 100; i++) {
 
-    //Aggiungo classe QUADRATO al div
+    //Richiamo funzione CREAQUADRATO
     let quadrato = creaQuadrato(i)
 
-    //Aggiungo EVENTO click
-    quadrato.addEventListener('click', function () {
-        quadrato.classList.toggle('bck-blu')
-        console.log(i)
-    })
+    //Richiamo funzione Cambio colore
+    clickColor(quadrato, i)
 
     //Aggiungo i DIV nella griglia
     grid.append(quadrato)
@@ -30,4 +27,18 @@ function creaQuadrato(numero) {
 
     //Restituisco il DIV
     return myDiv
+}
+
+//funzione CLICK
+function clickColor(quadrato, numero) {
+
+    //Creo evento click
+    quadrato.addEventListener('click', function () {
+
+        //Aggiungo Classe al QUADRATO
+        quadrato.classList.toggle('bck-blu')
+
+        //Stamplo la cella selezionata
+        console.log(numero)
+    })
 }
