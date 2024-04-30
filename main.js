@@ -9,9 +9,8 @@ document.getElementById('btn-play').addEventListener('click', function () {
 
     let nCelle = 100;
 
-    //Aggiungo dysplay none al click del bottone e selezione
-    document.getElementById('btn-play').classList.add('d-none')
-    document.getElementById('difficolta').classList.add('d-none')
+    //Aggiungo display none al click del bottone e selezione
+    document.getElementById('inizio').classList.add('d-none')
 
     let grid = document.getElementById('griglia')
 
