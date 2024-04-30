@@ -1,17 +1,24 @@
-let grid = document.getElementById('griglia')
+document.getElementById('btn-play').addEventListener('click', function () {
 
-//Creo ciclo for per creare i quadrati
-for (let i = 1; i <= 100; i++) {
+    //Aggiungo dysplay none al click del bottone
+    document.getElementById('btn-play').classList.add('d-none')
 
-    //Richiamo funzione CREAQUADRATO
-    let quadrato = creaQuadrato(i)
+    let grid = document.getElementById('griglia')
 
-    //Richiamo funzione Cambio colore
-    clickColor(quadrato, i)
+    //Creo ciclo for per creare i quadrati
+    for (let i = 1; i <= 100; i++) {
 
-    //Aggiungo i DIV nella griglia
-    grid.append(quadrato)
-}
+        //Richiamo funzione CREAQUADRATO
+        let quadrato = creaQuadrato(i)
+
+        //Richiamo funzione Cambio colore
+        clickColor(quadrato, i)
+
+        //Aggiungo i DIV nella griglia
+        grid.append(quadrato)
+    }
+})
+
 
 //funzione crea quadrato
 function creaQuadrato(numero) {
