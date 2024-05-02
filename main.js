@@ -18,16 +18,14 @@ document.getElementById('btn-play').addEventListener('click', function () {
 
 
     //in base alla dificoltà scelta cambia la griglia
-    if (valore == 'Medio') {
+    if (valore == 'grid-medio') {
         nCelle = 81
-        grid.classList.add('grid-medio')
-    } else if (valore == 'Difficile') {
+    } else if (valore == 'grid-difficile') {
         nCelle = 100
-        grid.classList.add('grid-difficile')
-    } else {
-        grid.classList.add('grid-facile')
-
     }
+
+    // Aggiungo alla grigia la classe = al valore
+    grid.classList.add(valore)
 
 
     //Creo ciclo for per creare i quadrati
