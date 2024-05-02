@@ -61,7 +61,7 @@ select {
     text-align: center;
     gap: 1rem;
     width: 50%;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
 }

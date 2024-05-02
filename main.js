@@ -11,6 +11,7 @@ document.getElementById('btn-play').addEventListener('click', function () {
 
     //Aggiungo display none al click del bottone e selezione
     document.getElementById('inizio').classList.add('d-none')
+    document.getElementById('restart').classList.remove('d-none')
 
     let grid = document.getElementById('griglia')
 
@@ -39,6 +40,13 @@ document.getElementById('btn-play').addEventListener('click', function () {
         //Aggiungo i DIV nella griglia
         grid.append(quadrato)
     }
+
+    //Bottone Restart
+    document.getElementById('btn-restart').addEventListener('click', function () {
+        grid.innerHTML = ''
+        document.getElementById('inizio').classList.remove('d-none')
+        document.getElementById('restart').classList.add('d-none')
+    })
 })
 
 
