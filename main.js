@@ -67,6 +67,15 @@ function clickColor(quadrato, numero) {
         //Aggiungo Classe al QUADRATO
         quadrato.classList.toggle('bck-blu')
 
+        //al click della casella se il testo è vuoto inserisci numero
+        if (quadrato.innerText == "") {
+            quadrato.append(numero)
+
+            // altrimenti rimuovi il numero
+        } else {
+            quadrato.innerText = ''
+        }
+
         //Stamplo la cella selezionata
         console.log(numero)
     })
