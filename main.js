@@ -9,11 +9,13 @@ document.getElementById('btn-play').addEventListener('click', function () {
 
     let nCelle = 49;
 
-    //Aggiungo display none al click del bottone e selezione
+    //Aggiungo display none all'avvio
     document.getElementById('inizio').classList.add('d-none')
+    //Rimuovo display none al restart
     document.getElementById('restart').classList.remove('d-none')
 
     let grid = document.getElementById('griglia')
+
 
     //in base alla dificoltà scelta cambia la griglia
     if (valore == 'Medio') {
@@ -43,9 +45,14 @@ document.getElementById('btn-play').addEventListener('click', function () {
 
     //Bottone Restart
     document.getElementById('btn-restart').addEventListener('click', function () {
+        //svuoto la griglia
         grid.innerHTML = ''
         document.getElementById('inizio').classList.remove('d-none')
         document.getElementById('restart').classList.add('d-none')
+
+        //rimuovo dimensione della griglia
+        grid.classList.remove(valore)
+
     })
 })
 
