@@ -46,7 +46,7 @@ select {
 }
 
 .grid-facile {
-    width: 1000px;
+    width: 700px;
 }
 
 .grid-medio {
@@ -54,7 +54,7 @@ select {
 }
 
 .grid-difficile {
-    width: 700px;
+    width: 1000px;
 }
 
 .contenitore {

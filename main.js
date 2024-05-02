@@ -7,7 +7,7 @@ document.getElementById('btn-play').addEventListener('click', function () {
     let livello = document.getElementById('difficolta')
     let valore = livello.value;
 
-    let nCelle = 100;
+    let nCelle = 49;
 
     //Aggiungo display none al click del bottone e selezione
     document.getElementById('inizio').classList.add('d-none')
@@ -19,7 +19,7 @@ document.getElementById('btn-play').addEventListener('click', function () {
         nCelle = 81
         grid.classList.add('grid-medio')
     } else if (valore == 'Difficile') {
-        nCelle = 49
+        nCelle = 100
         grid.classList.add('grid-difficile')
     } else {
         grid.classList.add('grid-facile')
@@ -52,7 +52,7 @@ function creaQuadrato(numero) {
     myDiv.classList.add('quadrato')
 
     //Aggiungo numero interno
-    myDiv.append(numero)
+    // myDiv.append(numero)
 
     //Restituisco il DIV
     return myDiv
